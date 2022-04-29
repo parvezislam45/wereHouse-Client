@@ -7,6 +7,7 @@ import Blog from './Components/Blog/Blog';
 import Inventory from './Components/Inventory/Inventory';
 import SignUp from './Components/SignUp/SignUp';
 import Login from './Components/Login/Login';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         <Route path ="/signup" element={<SignUp></SignUp>}></Route>
         <Route path ="/login" element={<Login></Login>}></Route>
       </Routes>
+      <footer className='bg-black'>
+        <Footer></Footer>
+      </footer>
     </div>
   );
 }
