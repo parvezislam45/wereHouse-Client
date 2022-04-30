@@ -6,12 +6,12 @@ import {getAuth}from 'firebase/auth'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDlMaWG7CH9_6M7BBrH-HEDs-U8Rumh82M",
-  authDomain: "david-bike-mania.firebaseapp.com",
-  projectId: "david-bike-mania",
-  storageBucket: "david-bike-mania.appspot.com",
-  messagingSenderId: "525367104180",
-  appId: "1:525367104180:web:697e0f1b4dc202a667fde1"
+  apiKey:process.envREACT_APP_apiKey,
+  authDomain:process.envREACT_APP_authDomain,
+  projectId:process.envREACT_APP_projectId,
+  storageBucket:process.envREACT_APP_storageBucket,
+  messagingSenderId:process.envREACT_APP_messagingSenderId,
+  appId:process.envREACT_APP_appId,
 };
 
 // Initialize Firebase

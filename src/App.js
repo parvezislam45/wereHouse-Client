@@ -9,6 +9,8 @@ import SignUp from './Components/SignUp/SignUp';
 import Login from './Components/Login/Login';
 import Footer from './Components/Footer/Footer';
 import NotFound from './Components/NotFound/NotFound';
+import Checkout from './Components/Checkout/Checkout';
+import RequireAuth from './RequreAuth/RequreAuth';
 
 function App() {
   return (
@@ -25,6 +27,11 @@ function App() {
         <Route path ="/inventory/" element={<Inventory></Inventory>}></Route>
         <Route path ="/signup" element={<SignUp></SignUp>}></Route>
         <Route path ="/login" element={<Login></Login>}></Route>
+        <Route path = "/checkout"element ={
+         <RequireAuth>
+           <Checkout></Checkout>
+         </RequireAuth>
+        }></Route>
         <Route path = "*" element = {<NotFound></NotFound>}></Route>
       </Routes>
       <footer className='bg-black'>

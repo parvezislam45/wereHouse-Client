@@ -1,5 +1,6 @@
+import { Button } from "@material-ui/core";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import useProduct from "../../Hook/Hook";
 import { addToDb, getStoredInventory } from "../../utilities/fakedb";
 
@@ -26,6 +27,11 @@ const Inventory = () => {
     return (
         <div className="inventory">
             <h1>This Is Inventory {orderId}</h1>
+            <div className="text-center">
+            <Link to ='/checkout'>
+            <Button type='submit' variant='contained' color='primary'>Procced To Checkout</Button>
+            </Link>
+            </div>
             {/* {
                 inventory.map((item) => (
                     <h1>{item._id}</h1>

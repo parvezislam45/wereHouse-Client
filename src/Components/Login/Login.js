@@ -42,7 +42,8 @@ const Login = () => {
     const paperStyle = { padding: '30px 20px', width: 300, margin: "20px auto" }
     const headerStyle = { margin: 0 }
     return (
-        <Grid>
+        <div className="login">
+             <Grid>
             <Paper elevation={20} style={paperStyle}>
                 <Grid align='center'>
                     <h2 style={headerStyle}>Sign Up</h2>
@@ -67,6 +68,7 @@ const Login = () => {
                 </form>
             </Paper>
         </Grid>
+        </div>
     )
 };
 
