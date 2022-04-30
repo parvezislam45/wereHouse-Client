@@ -28,8 +28,8 @@ const Inventory = () => {
         <div className="inventory">
             <h1>This Is Inventory {orderId}</h1>
             <div className="text-center">
-            <Link to ='/checkout'>
-            <Button type='submit' variant='contained' color='primary'>Procced To Checkout</Button>
+            <Link to ='/manageinventory'>
+            <Button type='submit' variant='contained' color='primary'>Manage Inventory</Button>
             </Link>
             </div>
             {/* {
