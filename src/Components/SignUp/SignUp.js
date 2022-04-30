@@ -1,16 +1,16 @@
-// import { Button, Checkbox, FormControl, FormControlLabel, FormLabel, Grid, Paper, Radio, RadioGroup, TextField, Typography } from '@material-ui/core';
+import { Button, Checkbox, FormControl, FormControlLabel, FormLabel, Grid, Paper, Radio, RadioGroup, TextField, Typography } from '@material-ui/core';
 import React from 'react';
 import { Link } from 'react-router-dom';
-// const paperStyle = { padding: '30px 20px', width: 300, margin: "20px auto" }
-//     const headerStyle = { margin: 0 }
-//     const marginTop = { marginTop: 5 }
+const paperStyle = { padding: '30px 20px', width: 300, margin: "20px auto" }
+    const headerStyle = { margin: 0 }
+    const marginTop = { marginTop: 5 }
 
 
 const SignUp = () => {
     return (
         <div>
             <h1>Sign-Up</h1>
-            {/* <Grid>
+            <Grid>
             <Paper elevation={20} style={paperStyle}>
                 <Grid align='center'>
                     <h2 style={headerStyle}>Sign Up</h2>
@@ -45,7 +45,7 @@ const SignUp = () => {
                      <p>Already Have a Account ? <Link to ='/login'>Log In</Link> </p>
                 </form>
             </Paper>
-        </Grid> */}
+        </Grid>
         </div>
     );
 };
