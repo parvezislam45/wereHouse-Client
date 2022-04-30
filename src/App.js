@@ -12,13 +12,15 @@ import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <div className="App">
+      <div className="sticky">
       <Navbar></Navbar>
+      </div>
       <Routes>
         <Route path ="/" element={<Home></Home>}></Route>
         <Route path ="/home" element={<Home></Home>}></Route>
         <Route path ="/allbike" element={<AllBikes></AllBikes>}></Route>
         <Route path ="/blog" element={<Blog></Blog>}></Route>
-        <Route path ="/inventory" element={<Inventory></Inventory>}></Route>
+        <Route path ="/inventory/:orderId" element={<Inventory></Inventory>}></Route>
         <Route path ="/signup" element={<SignUp></SignUp>}></Route>
         <Route path ="/login" element={<Login></Login>}></Route>
       </Routes>

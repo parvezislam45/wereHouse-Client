@@ -1,0 +1,155 @@
+[
+  {
+    
+    "name": "Iphone 13 Pro Max",
+    "price": 4460,
+    "stock": 20,
+    "ratings": 4,
+    "ratingsCount": 3725,
+    "img": "https://i.ibb.co/gtR2CQK/2018-kymco-xtown-300i-scooter-review-3.png",
+  
+    "quantity": 0
+  },
+  {
+    
+    "name": "Iphone 13 Pro",
+    "price": 4460,
+    "stock": 20,
+    "ratings": 4,
+    "ratingsCount": 3725,
+    "img": "https://i.ibb.co/h7T9Vbn/2019-ktm-rc-125-india-launch-price-official-3.png",
+  
+    "quantity": 0
+  },
+  {
+    
+    "name": "Iphone 13 Mini",
+    "price": 4460,
+    "stock": 20,
+    "ratings": 4,
+    "ratingsCount": 3725,
+    "img": "https://i.ibb.co/C98ZkCZ/d4c97af79013514b8d18b5cc831b034c.png",
+  
+    "quantity": 0
+  },
+  {
+    "name": "Iphone 12 Mini",
+    "price": 35000,
+    "stock": 19,
+    "ratings": 5,
+    "ratingsCount": 4355,
+    "img": "https://i.ibb.co/3dSLcqv/apple-iphone-12-mini-r1.jpg",
+    "shipping": 14,
+    "quantity": 0
+  },
+  {
+  
+    "name": "Iphone 12 Pro",
+    "price": 43000,
+    "stock": 20,
+    "ratings": 4,
+    "ratingsCount": 3972,
+    "img": "https://i.ibb.co/dp3XcRW/71-JGa9-Mdd-GL-AC-SX522.jpg",
+    "shipping": 1,
+    "quantity": 0
+  },
+  
+  {
+    "name": "Samsung Note 20",
+    "price": 18000,
+    "stock": 19,
+    "ratings": 3,
+    "ratingsCount": 4372,
+    "img": "https://i.ibb.co/bgPzRCQ/450-1000.jpg",
+    "shipping": 19,
+    "quantity": 0
+  },
+  {
+  
+    "name": "Samsung Galaxy Fold",
+    "price": 26000,
+    "stock": 1,
+    "ratings": 4,
+    "ratingsCount": 2870,
+    "img": "https://i.ibb.co/1M9kJb0/images.jpg",
+    "shipping": 15,
+    "quantity": 0
+  },
+  {
+    
+    "name": "Samsung Galaxy A52",
+    "price": 31000,
+    "stock": 7,
+    "ratings": 4,
+    "ratingsCount": 1360,
+    "img": "https://i.ibb.co/k9BK3ZY/download.jpg",
+    "shipping": 50,
+    "quantity": 0
+  },
+  {
+    
+    "name": "Huawei Mate 40",
+    "price": 22600,
+    "stock": 4,
+    "ratings": 5,
+    "ratingsCount": 1976,
+    "img": "https://i.ibb.co/x5yhF7h/huaweimate40pro.jpg",
+    "shipping": 46,
+    "quantity": 0
+  },
+  {
+    
+    "name": "Huawei P 50",
+    "price": 22600,
+    "stock": 4,
+    "ratings": 5,
+    "ratingsCount": 1976,
+    "img": "https://i.ibb.co/y6p4tv2/2-p50-pro-pc.png",
+    "shipping": 46,
+    "quantity": 0
+  },
+  {
+    "name": "One Plus 9",
+    "seller": "Addidas",
+    "price": 24370,
+    "stock": 1,
+    "ratings": 4,
+    "ratingsCount": 565,
+    "img": "https://i.ibb.co/2vkD4cs/oneplus-9-pro-1.jpg",
+    "shipping": 36,
+    "quantity": 0
+  },
+  {
+    "name": "One Plus 10 pro",
+    "seller": "Addidas",
+    "price": 24370,
+    "stock": 1,
+    "ratings": 4,
+    "ratingsCount": 565,
+    "img": "https://i.ibb.co/0FkWfP7/One-Plus-10-Pro-Feature-Image-2-Watermarked.jpg",
+    "shipping": 36,
+    "quantity": 0
+  },
+  {
+    "name": "One Plus 9 Pro",
+    "seller": "Addidas",
+    "price": 24370,
+    "stock": 1,
+    "ratings": 4,
+    "ratingsCount": 565,
+    "img": "https://i.ibb.co/r6SKG4M/sm-g780-g781-s20fe-front-zb.jpg",
+    "shipping": 36,
+    "quantity": 0
+  },
+  {
+    "name": "One Plus Node",
+    "price": 18400,
+    "stock": 15,
+    "ratings": 5,
+    "ratingsCount": 3702,
+    "img": "https://i.ibb.co/6n2pGF1/photo-1614796740292-50ae67262ff0.jpg",
+    "shipping": 29,
+    "quantity": 0
+  }
+  
+]
