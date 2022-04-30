@@ -69,4 +69,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.blogs{
+  min-height: 100vh;
+}
+.login{
+  min-height: 100vh;
+}
+.inventory{
+  min-height: 100vh;
+}
 

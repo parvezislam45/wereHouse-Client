@@ -29,7 +29,7 @@ const Navbar = () => {
                                 <Link to='/allbike' className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white">All-Bike</Link>
                             </li>
                             <li>
-                                <Link to='/blogs' className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white">Blogs</Link>
+                                <Link to='/blog' className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white">Blogs</Link>
                             </li>
                             <li>
                                 <Link to='/inventory' className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white">Inventory</Link>

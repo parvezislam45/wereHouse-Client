@@ -45,7 +45,7 @@ const SignUp = () => {
                      <p>Already Have a Account ? <Link to ='/login'>Log In</Link> </p>
                 </form>
             </Paper>
-        </Grid>
+            </Grid>
         </div>
     );
 };

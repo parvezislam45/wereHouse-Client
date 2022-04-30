@@ -24,7 +24,7 @@ const Inventory = () => {
     //     setInventory([])
     // }
     return (
-        <div>
+        <div className="inventory">
             <h1>This Is Inventory {orderId}</h1>
             {/* {
                 inventory.map((item) => (
