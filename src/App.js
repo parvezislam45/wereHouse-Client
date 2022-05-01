@@ -14,7 +14,7 @@ import ManageInventory from './Components/ManageInventory/ManageInventory';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-black">
       <div className="sticky">
       <Navbar></Navbar>
       </div>

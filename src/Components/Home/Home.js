@@ -8,9 +8,10 @@ const Home = () => {
     return (
         <div>
             <Carosel></Carosel>
-            <div className=' container mx-auto grid grid-cols-3 gap-5 mt-14 gap-y-10'>
+            <h1 className='text-white text-3xl text-center mt-2'>Our Product</h1>
+            <div className=' mx-auto grid grid-cols-3 gap-5 mt-14 gap-y-10 bg-black'>
         {
-            products.slice(0, 6).map(product =><BikeDetails
+            products.slice(0, 9).map(product =><BikeDetails
             key ={product._id}
             product ={product}
             ></BikeDetails>)

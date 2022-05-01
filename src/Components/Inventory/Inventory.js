@@ -26,7 +26,7 @@ const Inventory = () => {
     // }
     return (
         <div className="inventory">
-            <h1>This Is Inventory {orderId}</h1>
+            <h1 className="text-white text-center">This Is Inventory {orderId}</h1>
             <div className="text-center">
             <Link to ='/manageinventory'>
             <Button type='submit' variant='contained' color='primary'>Manage Inventory</Button>
