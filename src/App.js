@@ -11,6 +11,7 @@ import Footer from './Components/Footer/Footer';
 import NotFound from './Components/NotFound/NotFound';
 import RequireAuth from './RequreAuth/RequreAuth';
 import ManageInventory from './Components/ManageInventory/ManageInventory';
+import AddProduct from './Components/AddProduct/AddProduct';
 
 function App() {
   return (
@@ -30,6 +31,11 @@ function App() {
         <Route path = "/manageinventory"element ={
          <RequireAuth>
            <ManageInventory></ManageInventory>
+         </RequireAuth>
+        }></Route>
+        <Route path = "/addproduct"element ={
+         <RequireAuth>
+           <AddProduct></AddProduct>
          </RequireAuth>
         }></Route>
         <Route path = "*" element = {<NotFound></NotFound>}></Route>

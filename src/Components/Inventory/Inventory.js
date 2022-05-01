@@ -6,38 +6,22 @@ import { addToDb, getStoredInventory } from "../../utilities/fakedb";
 
 const Inventory = () => {
     const {orderId} = useParams()
-    // const [products, setProduct] = useProduct()
-    // const [inventory, setInventory] = useState([])
-    // useEffect(() => {
-    //     const storedInventory = getStoredInventory()
-    //     const savedInventory = []
-    //     for (const _id in savedInventory) {
-    //         const addedProduct = products.find(product => product._id === _id);
-    //         if (addedProduct) {
-    //             const quantity = storedInventory[_id]
-    //             addedProduct.quantity = quantity;
-    //             savedInventory.push(addedProduct);
-    //         }
-    //     }
-    //     setInventory(savedInventory)
-    // }, [products])
-    // const remove = () => {
-    //     setInventory([])
-    // }
+    const [product,setProduct] = useState({})
+    useEffect(()=>{
+        const url = `http://localhost:7000/product/${orderId}`
+        fetch(url)
+        .then(res=> res.json())
+        .then (data =>setProduct(data))
+    },[])
     return (
         <div className="inventory">
-            <h1 className="text-white text-center">This Is Inventory {orderId}</h1>
+            <h1 className="text-white text-center">Id : {orderId}</h1>
+            <h1 className="text-white text-center">Name : {product.name}</h1>
             <div className="text-center">
             <Link to ='/manageinventory'>
             <Button type='submit' variant='contained' color='primary'>Manage Inventory</Button>
             </Link>
             </div>
-            {/* {
-                inventory.map((item) => (
-                    <h1>{item._id}</h1>
-
-                ))
-            } */}
         </div>
     );
 };

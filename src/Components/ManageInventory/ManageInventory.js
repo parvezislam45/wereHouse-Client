@@ -7,6 +7,7 @@ const ManageInventory = () => {
     const [products,setProducts]=useProduct()
     return (
         <div className=' container mx-auto grid grid-cols-3 gap-5 mt-14 gap-y-10'>
+            <h1 className='text-white text-center'>Manage Inventory {products.length}</h1>
             {
                 products.map(product =><AddInventory
                 key ={product._id}
