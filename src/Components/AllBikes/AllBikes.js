@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import useProduct from '../../Hook/Hook';
-import useInventory from '../../Hook/inventory';
-import { addToDb } from '../../utilities/fakedb';
 import BikeDetails from '../BikeDetails/BikeDetails';
 
 const AllBikes = () => {

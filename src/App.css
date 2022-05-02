@@ -29,53 +29,122 @@
   height: 100%;
   object-fit: cover;
 }
-.img1{
+
+.img1 {
   width: 100%;
   height: 100%;
-  background-image: url('https://i.ibb.co/NjDF3Lc/1.png');	
+  background-image: url('https://i.ibb.co/NjDF3Lc/1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.img2{
+
+.img2 {
   width: 100%;
   height: 100%;
-  background-image: url('https://i.ibb.co/252H4PQ/3.png');	
+  background-image: url('https://i.ibb.co/252H4PQ/3.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.img3{
+
+.img3 {
   width: 100%;
   height: 100%;
-  background-image: url('https://i.ibb.co/gzTV4K1/2.png');	
+  background-image: url('https://i.ibb.co/gzTV4K1/2.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.img4{
+
+.img4 {
   width: 100%;
   height: 100%;
-  background-image: url('https://i.ibb.co/ypPgW3L/4.png');	
+  background-image: url('https://i.ibb.co/ypPgW3L/4.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.img5{
+
+.img5 {
   width: 100%;
   height: 100%;
-  background-image: url('https://i.ibb.co/WBH6Vts/5.png');	
+  background-image: url('https://i.ibb.co/WBH6Vts/5.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.blogs{
-  min-height: 100vh;
-}
-.login{
-  min-height: 100vh;
-}
-.inventory{
+
+.blogs {
   min-height: 100vh;
 }
 
+.login {
+  min-height: 100vh;
+}
+
+.inventory {
+  min-height: 100vh;
+}
+
+/* ----------banneer--------- */
+body {
+  background-color: #e8eaec;
+}
+
+.bg-banner {
+  background-image: url('../../David-Bike-WereHouse/src/gghhh.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+
+/* Banner */
+.banner-input {
+  border: none;
+  width: 300px;
+}
+
+.banner-input:focus {
+  border: none;
+  outline: none;
+}
+
+/* card shadow */
+.custom-shadow {
+  box-shadow: 4px 4px 8px rgb(189 200 213), -4px -4px 8px rgb(255 255 255);
+}
+
+.header {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.title {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.title2 {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.header2 {
+  font-family: 'Tangerine', cursive;
+}
+
+.name {
+  font-family: 'Cormorant Upright', serif;
+}
+
+.details {
+  font-family: 'Bilbo Swash Caps', cursive;
+}
+
+.item {
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.input {
+  border-radius: 5px;
+  box-shadow: inset 8px 8px 15px #cbced1, inset -8px -8px 15px white;
+  border : 1px solid palevioletred
+}
