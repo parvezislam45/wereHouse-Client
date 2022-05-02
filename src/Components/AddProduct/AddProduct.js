@@ -5,7 +5,21 @@ import { useForm } from "react-hook-form";
 
 const AddProduct = () => {
     const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        console.log(data)
+        const url = `http://localhost:7000/product`;
+        fetch(url,{
+            method : 'POST',
+            headers : {
+                'content-type' : 'application/json'
+            },
+            body : JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then (result =>{
+            console.log(result);
+        })
+    };
     const paperStyle = { padding: '30px 20px', width: 300, margin: "20px auto" }
     const headerStyle = { margin: 0 }
 
@@ -20,8 +34,8 @@ const AddProduct = () => {
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <Input {...register("name", { required: true, maxLength: 20 })} placeholder="Input Name"/>
                         <Input {...register("price")}label='Price' placeholder="Input Price" />
-                        <TextareaAutosize {...register("price")}label='Price' placeholder="description"></TextareaAutosize>
-                        <Input {...register("img")}label='img' placeholder="Enter your password" />
+                        <TextareaAutosize {...register("description")}label='description' placeholder="description"></TextareaAutosize>
+                        <Input {...register("img")}label='img' placeholder="Input Url" />
                         <Input {...register("stock")}label='stock' placeholder="Add Stock" />
 
                         <div className='mt-5'>

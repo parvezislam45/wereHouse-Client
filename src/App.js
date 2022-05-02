@@ -12,10 +12,11 @@ import NotFound from './Components/NotFound/NotFound';
 import RequireAuth from './RequreAuth/RequreAuth';
 import ManageInventory from './Components/ManageInventory/ManageInventory';
 import AddProduct from './Components/AddProduct/AddProduct';
+import DelateProduct from './Components/DelateProduct/DelateProduct';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-black">
       <div className="sticky">
       <Navbar></Navbar>
       </div>
@@ -36,6 +37,11 @@ function App() {
         <Route path = "/addproduct"element ={
          <RequireAuth>
            <AddProduct></AddProduct>
+         </RequireAuth>
+        }></Route>
+        <Route path = "/delate"element ={
+         <RequireAuth>
+           <DelateProduct></DelateProduct>
          </RequireAuth>
         }></Route>
         <Route path = "*" element = {<NotFound></NotFound>}></Route>
