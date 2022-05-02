@@ -15,7 +15,7 @@ import AddProduct from './Components/AddProduct/AddProduct';
 
 function App() {
   return (
-    <div className="App bg-black">
+    <div className="App">
       <div className="sticky">
       <Navbar></Navbar>
       </div>

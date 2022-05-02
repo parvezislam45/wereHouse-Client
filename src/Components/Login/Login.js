@@ -67,7 +67,7 @@ const Login = () => {
                         <p>Don't Have a Account ? <Link to ='/signup' onClick={navigateSignup}>Sign Up</Link> </p>
                 </form>
             </Paper>
-        </Grid>
+            </Grid>
         </div>
     )
 };
