@@ -8,9 +8,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import "./styles.css";
-import img1 from '../../Image/banner-2.jpg'
-import img2 from '../../Image/banner-3.jpg'
-import img3 from '../../Image/banner-1.jpg'
 import { Autoplay, Navigation, Pagination } from "swiper";
 
 
