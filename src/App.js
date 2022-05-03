@@ -14,13 +14,13 @@ import ManageInventory from './Components/ManageInventory/ManageInventory';
 import AddProduct from './Components/AddProduct/AddProduct';
 import DelateProduct from './Components/DelateProduct/DelateProduct';
 import UpdateQuantity from './Components/UpdateQuantity/UpdateQuantity';
+import Nav from './Components/Nav/Nav';
+
 
 function App() {
   return (
     <div className="App bg-black">
-      <div className="sticky">
       <Navbar></Navbar>
-      </div>
       <Routes>
         <Route path ="/" element={<Home></Home>}></Route>
         <Route path ="/home" element={<Home></Home>}></Route>
