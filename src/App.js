@@ -14,9 +14,9 @@ import ManageInventory from './Components/ManageInventory/ManageInventory';
 import AddProduct from './Components/AddProduct/AddProduct';
 import DelateProduct from './Components/DelateProduct/DelateProduct';
 import UpdateQuantity from './Components/UpdateQuantity/UpdateQuantity';
-import Nav from './Components/Nav/Nav';
 import Location from './Components/Location/Location';
 import { ToastContainer } from 'react-toastify';
+import Orders from './Components/Orders/Orders';
 
 
 function App() {
@@ -46,6 +46,11 @@ function App() {
         <Route path = "/delate"element ={
          <RequireAuth>
            <DelateProduct></DelateProduct>
+         </RequireAuth>
+        }></Route>
+        <Route path = "/orders"element ={
+         <RequireAuth>
+           <Orders></Orders>
          </RequireAuth>
         }></Route>
         <Route path = "*" element = {<NotFound></NotFound>}></Route>

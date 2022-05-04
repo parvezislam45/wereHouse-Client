@@ -63,8 +63,9 @@ const Navbar = () => {
                             <div className='ml-72 '>
                                 {
                                     user && <>
-                                        <Link to='/addproduct' className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium border-solid border-2 border-sky-500">AddItem</Link>
-                                        <Link to='/delate' className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium border-solid border-2 border-sky-500">RemoveItem</Link>
+                                        <Link to='/addproduct' className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium border-solid border-2 border-sky-500">Add</Link>
+                                        <Link to='/delate' className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium border-solid border-2 border-sky-500">Remove</Link>
+                                        <Link to='/orders' className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium border-solid border-2 border-sky-500">Orders</Link>
                                     </>
                                 }
                                 {
