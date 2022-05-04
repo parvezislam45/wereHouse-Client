@@ -15,6 +15,8 @@ import AddProduct from './Components/AddProduct/AddProduct';
 import DelateProduct from './Components/DelateProduct/DelateProduct';
 import UpdateQuantity from './Components/UpdateQuantity/UpdateQuantity';
 import Nav from './Components/Nav/Nav';
+import Location from './Components/Location/Location';
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
@@ -28,10 +30,10 @@ function App() {
         <Route path ="/blog" element={<Blog></Blog>}></Route>
         <Route path ="/inventory/:orderId" element={<Inventory></Inventory>}></Route>
         <Route path = "/update/:id" element = {<UpdateQuantity></UpdateQuantity>}></Route>
-        <Route path ="/inventory/" element={<Inventory></Inventory>}></Route>
+        {/* <Route path ="/inventory/" element={<Inventory></Inventory>}></Route> */}
         <Route path ="/signup" element={<SignUp></SignUp>}></Route>
         <Route path ="/login" element={<Login></Login>}></Route>
-        <Route path = "/manageinventory"element ={
+        <Route path = "/manageinventory/:orderId"element ={
          <RequireAuth>
            <ManageInventory></ManageInventory>
          </RequireAuth>
@@ -48,9 +50,11 @@ function App() {
         }></Route>
         <Route path = "*" element = {<NotFound></NotFound>}></Route>
       </Routes>
-      <footer className='bg-black'>
+     
+      <footer className='bg-black mt-3'>
         <Footer></Footer>
       </footer>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }

@@ -30,7 +30,6 @@ const AddInventory = ({ product }) => {
                     <h6 className='text-xl font-bold text-white'>Id : {_id}</h6>
                     <h5 className='text-xl font-bold text-white'>Seller : {seller}</h5>
                     <h3 className='text-xl font-bold text-white'>Quantity : {quantity}</h3>
-                    <h3 className='text-xl font-bold text-white'>Sold : {sold}</h3>
                     <h2 className='text-xl font-bold text-white'>Price : ${price}</h2>
                     </div>
                     <button  onClick={()=>handleDelate(product._id)} type="button" class="text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Dalevered</button>

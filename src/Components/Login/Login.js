@@ -46,7 +46,7 @@ const Login = () => {
              <Grid>
             <Paper elevation={20} style={paperStyle}>
                 <Grid align='center'>
-                    <h2 style={headerStyle}>Sign Up</h2>
+                    <h2 style={headerStyle}>Login</h2>
                 </Grid>
                 <form onSubmit={handleLogin}>
                     <TextField onBlur={handleEmail} fullWidth label='Email'type='email' placeholder="Enter your email" />

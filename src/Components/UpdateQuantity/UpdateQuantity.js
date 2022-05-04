@@ -78,7 +78,6 @@ const UpdateQuantity = () => {
                     <div className='item'>
                     <h5 className='text-xl   text-white'>Seller : {items.seller}</h5>
                     <h3 className='text-xl   text-white'>Quantity : {items.quantity}</h3>
-                    <h3 className='text-xl   text-white'>Sold : {items.sold}</h3>
                     <h2 className='text-xl   text-white'>Price : ${items.price}</h2>
                     </div>
                     <button onClick={()=>delevary(items._id)} className='text-white'>Delevary</button>
