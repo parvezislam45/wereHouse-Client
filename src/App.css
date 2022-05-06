@@ -75,6 +75,7 @@
   background-size: cover;
 }
 
+
 .blogs {
   min-height: 100vh;
 }
@@ -148,6 +149,7 @@ body {
   box-shadow: inset 8px 8px 15px #cbced1, inset -8px -8px 15px white;
   border : 1px solid palevioletred
 }
-.pagination{
-  align-items: center;
+navheader{
+  font-family: 'Racing Sans One', cursive;
+  font-weight: 400;
 }

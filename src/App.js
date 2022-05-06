@@ -17,6 +17,7 @@ import UpdateQuantity from './Components/UpdateQuantity/UpdateQuantity';
 import Location from './Components/Location/Location';
 import { ToastContainer } from 'react-toastify';
 import Orders from './Components/Orders/Orders';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -26,10 +27,22 @@ function App() {
       <Routes>
         <Route path ="/" element={<Home></Home>}></Route>
         <Route path ="/home" element={<Home></Home>}></Route>
-        <Route path ="/allbike" element={<AllBikes></AllBikes>}></Route>
+        <Route path ="/inventory/" element={
+        <RequireAuth>
+          <AllBikes></AllBikes>
+        </RequireAuth>
+        }></Route>
         <Route path ="/blog" element={<Blog></Blog>}></Route>
-        <Route path ="/inventory/:orderId" element={<Inventory></Inventory>}></Route>
-        <Route path = "/update/:id" element = {<UpdateQuantity></UpdateQuantity>}></Route>
+        {/* <Route path ="/inventory/:orderId" element={
+        <RequireAuth>
+          <AllBikes></AllBikes>
+        </RequireAuth>
+        }></Route> */}
+        <Route path = "/update/:id" element = {
+        <RequireAuth>
+          <UpdateQuantity></UpdateQuantity>
+        </RequireAuth>
+        }></Route>
         {/* <Route path ="/inventory/" element={<Inventory></Inventory>}></Route> */}
         <Route path ="/signup" element={<SignUp></SignUp>}></Route>
         <Route path ="/login" element={<Login></Login>}></Route>

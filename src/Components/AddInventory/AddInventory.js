@@ -4,7 +4,6 @@ import useProduct from '../../Hook/Hook';
 const AddInventory = ({ product }) => {
     const {_id, name, img, price, description, seller, quantity, sold } = product
     const [products,setProducts] = useProduct();
-    const [reload,setReload] =useState(false);
     const handleDelate = id =>{
         
             const url = `http://localhost:7000/product/${id}`
@@ -37,10 +36,6 @@ const AddInventory = ({ product }) => {
             </div>
 
         </div>
-        // <div className=' container mx-auto grid grid-cols-3 gap-5 mt-14 gap-y-10'>
-        //     <h1 className='text-center text-white'>Mange Item {product.id}</h1>
-        //     <button onClick={()=>delivered}><span className='text-white'>Delivered</span></button>
-        // </div>
     );
 };
 

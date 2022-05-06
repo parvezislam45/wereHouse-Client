@@ -5,8 +5,9 @@ const Background = () => {
     return (
         <div>
             <div className='bg-[#FCF4E0]'>
-                    <div className="inner flex flex-col items-center justify-center bg-banner">
-                        <h1 className='header text-7xl font-medium mb-12'><span className='text-rose-400'>David Bike WereHouse</span></h1>
+                    <div className="inner flex flex-col items-center justify-center bg-banner h-40">
+                        <marquee behavior="alternative" direction="left"><span className='text-rose-400 header text-5xl font-medium'>David Bike WereHouse</span></marquee>
+                        {/* <h1 className='header text-7xl font-medium mb-12'><span className='text-rose-400'>David Bike WereHouse</span></h1> */}
                         <h1 className='header text-5xl font-medium mb-12'><span className='text-cyan-300'>Parvez Islam</span></h1>
                         <h1 className='header2 text-6xl font-medium mb-16'><span className='text-yellow-400'>Visit Our WereHouse to Collect Your Dream Bike</span></h1>
                         <div className="input-field -mb-8 border-pink-300">

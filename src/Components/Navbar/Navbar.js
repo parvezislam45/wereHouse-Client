@@ -18,30 +18,14 @@ const Navbar = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
                         <div className="flex items-center between">
-                            <div className="flex-shrink-0">
-                                <h1 className='text-white'>David Bike WereHouse</h1>
-                            </div>
                             <div className="hidden md:block">
                                 <div className="ml-10 flex items-baseline space-x-4">
+                                    <h1 className=" hover:bg-gray-700 text-white px-5 py-4  "><span className='navheader font-weight: 900'>DavidBikeWereHouse</span></h1>
                                     <Link
                                         to='/home'
                                         className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         Home
-                                    </Link>
-
-                                    <Link
-                                        to="/allbike"
-                                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                                    >
-                                        All-Bike
-                                    </Link>
-
-                                    <Link
-                                        to="/inventory"
-                                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                                    >
-                                        Inventory
                                     </Link>
 
                                     <Link
@@ -57,24 +41,29 @@ const Navbar = () => {
                                     >
                                         Sign-Up
                                     </Link>
+                                    <Link to='/addproduct' className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Add</Link>
+    
                                 </div>
 
                             </div>
-                            <div className='ml-72 '>
+                            <div className='ml-72 flex items-baseline space-x-4 '>
                                 {
                                     user && <>
-                                        <Link to='/addproduct' className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium border-solid border-2 border-sky-500">Add</Link>
-                                        <Link to='/delate' className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium border-solid border-2 border-sky-500">Remove</Link>
-                                        <Link to='/orders' className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium border-solid border-2 border-sky-500">Orders</Link>
+                                        <Link to='/orders' className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">My-Items</Link>
                                     </>
                                 }
                                 {
+                                    user ? <h1 className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >{user.displayName}</h1>
+                                        :
+                                        <h1 className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >User</h1>
+                                }
+                                {
                                     user ?
-                                        <button className='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm border-solid border-2 border-sky-500 font-medium' onClick={handleSignOut}>Log-Out</button>
+                                        <button className='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm' onClick={handleSignOut}>Log-Out</button>
                                         :
                                         <Link
                                             to="/login"
-                                            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 ml-24 rounded-md text-sm font-medium border-solid border-2 border-sky-500"
+                                            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 ml-24 rounded-md text-sm font-medium"
                                         >
                                             Login
                                         </Link>

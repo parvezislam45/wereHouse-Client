@@ -2,10 +2,11 @@
 import { Button, Grid, Input, Paper, TextareaAutosize, TextField } from '@material-ui/core';
 import React from 'react';
 import { useForm } from "react-hook-form";
+import { toast } from 'react-toastify';
 
 const AddProduct = () => {
     const { register, handleSubmit } = useForm();
-    const onSubmit = data => {
+    const onSubmit = (data,event) => {
         console.log(data)
         const url = `http://localhost:7000/product`;
         fetch(url,{
@@ -17,7 +18,8 @@ const AddProduct = () => {
         })
         .then(res => res.json())
         .then (result =>{
-            console.log(result);
+            toast('product added sucessfully',result);
+            event.target.reset()
         })
     };
     const paperStyle = { padding: '30px 20px', width: 300, margin: "20px auto" }
@@ -33,10 +35,12 @@ const AddProduct = () => {
                     </Grid>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <Input {...register("name", { required: true, maxLength: 20 })} placeholder="Input Name"/>
+                        <Input {...register("email")} placeholder="email"/>
                         <Input {...register("price")}label='Price' placeholder="Input Price" />
                         <TextareaAutosize {...register("description")}label='description' placeholder="description"></TextareaAutosize>
                         <Input {...register("img")}label='img' placeholder="Input Url" />
-                        <Input {...register("stock")}label='stock' placeholder="Add Stock" />
+                        <Input {...register("seller")}label='seller' placeholder="seller" />
+                        <Input {...register("quantity")}label='stock' placeholder="quantity" />
 
                         <div className='mt-5'>
                             <Button type='submit' variant='contained' color='primary'>Add Item</Button>

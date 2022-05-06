@@ -1,9 +1,7 @@
 import { Button } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import useProduct from "../../Hook/Hook";
-import useServiceDetails from "../../Hook/uaeProductDetails";
-import { addToDb, getStoredInventory } from "../../utilities/fakedb";
+import useServiceDetails from "../../Hook/useProductDetails";
 
 const Inventory = () => {
     const {orderId} = useParams()

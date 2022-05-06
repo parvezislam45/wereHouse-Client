@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import "./styles.css";
-import { Autoplay, Navigation, Pagination } from "swiper";
+import { Autoplay, EffectCoverflow, Navigation, Pagination } from "swiper";
 
 
 const Carosel = () => {
@@ -39,10 +39,9 @@ const Carosel = () => {
                     </div></SwiperSlide>
                     <SwiperSlide><div className="img5">
                     </div></SwiperSlide>
-                    
+
                 </Swiper>
             </>
-
         </div>
     );
 };
