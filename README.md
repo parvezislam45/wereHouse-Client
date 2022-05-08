@@ -1,5 +1,20 @@
 # Getting Started with Create React App
-
+# Live Side Link :https://david-bike-mania.web.app/
+# client side git hub link : https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-parvezislam45
+# steckoverFlow ans link :https://stackoverflow.com/questions/72160650/i-want-to-decrease-my-stock-amount-by-the-delivery-button-in-mongodb/72160772#72160772
+# server side git hub link: https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-parvezislam45
+# Project OverView
+* This Project is Bike Werehouse Related
+* add mongo db Data Server
+* use firebase authentication
+* add responsive navbar
+* add home page card and carosel
+* add location map
+* add server item function
+* add manage inventory to add delete system
+* add delevary & update quantity system
+* added my item service system
+* ans to steckoverflow question
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
