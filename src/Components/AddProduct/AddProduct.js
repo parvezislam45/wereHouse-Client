@@ -26,10 +26,10 @@ const AddProduct = () => {
     const headerStyle = { margin: 0 }
 
     return (
-        <div>
+        <div >
             <h1 className='text-white'>Added Product</h1>
-            <Grid>
-                <Paper elevation={20} style={paperStyle}>
+            <Grid className='from'>
+                <Paper elevation={30} style={paperStyle}>
                     <Grid align='center'>
                         <h2 style={headerStyle}>Added Item</h2>
                     </Grid>

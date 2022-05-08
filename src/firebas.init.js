@@ -6,19 +6,12 @@ import {getAuth}from 'firebase/auth'
 
 
 const firebaseConfig = {
-  // apiKey:process.env.REACT_APP_apiKey,
-  // authDomain:process.env.REACT_APP_authDomain,
-  // projectId:process.env.REACT_APP_projectId,
-  // storageBucket:process.env.REACT_APP_storageBucket,
-  // messagingSenderId:process.env.REACT_APP_messagingSenderId,
-  // appId:process.env.REACT_APP_appId,
-
-  apiKey: "AIzaSyDlMaWG7CH9_6M7BBrH-HEDs-U8Rumh82M",
-  authDomain: "david-bike-mania.firebaseapp.com",
-  projectId: "david-bike-mania",
-  storageBucket: "david-bike-mania.appspot.com",
-  messagingSenderId: "525367104180",
-  appId: "1:525367104180:web:697e0f1b4dc202a667fde1"
+  apiKey:process.env.REACT_APP_apiKey,
+  authDomain:process.env.REACT_APP_authDomain,
+  projectId:process.env.REACT_APP_projectId,
+  storageBucket:process.env.REACT_APP_storageBucket,
+  messagingSenderId:process.env.REACT_APP_messagingSenderId,
+  appId:process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase

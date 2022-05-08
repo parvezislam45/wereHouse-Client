@@ -21,10 +21,7 @@ const HomeDetails = ({product}) => {
                     <h3 className='text-xl   text-white'>Sold : {sold}</h3>
                     <h2 className='text-xl   text-white'>Price : ${price}</h2>
                     </div>
-                    {/* <div className="mb-3">
-                        <button onClick={() => goToInventory(_id)} type="button" class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800">Go Inventory</button>
-                    </div> */}
-                    {/* <Link to= {`/update/${_id}`}><button type="button" class="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Update Quantity</button></Link> */}
+                    <Link to={`/update/${_id}`}><button type="button" class="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 mt-3 dark:focus:ring-purple-900">Update-Quantity</button></Link>
                 </div>
             </div>
 

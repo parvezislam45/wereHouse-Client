@@ -97,7 +97,7 @@ body {
   background-image: url('../../David-Bike-WereHouse/src/gghhh.png');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 45vh;
 }
 
 /* Banner */
@@ -152,4 +152,13 @@ body {
 navheader{
   font-family: 'Racing Sans One', cursive;
   font-weight: 400;
+}
+.sign{
+  box-shadow: 0px 10px 13px -6px rgb(0 0 0 / 20%), 0px 20px 31px 3px rgb(0 0 0 / 14%), 0px 8px 38px 7px rgb(0 0 0 / 12%);
+}
+.from{
+  justify-content: center;
+}
+.animation{
+  width: 90vw!important;
 }

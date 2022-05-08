@@ -2,11 +2,13 @@ import React from 'react';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import './Location.css'
 
+
 const Location = () => {
-    const position = [23.934621449748832, 90.71200833858734]
+    
+    const position = [23.935480035215853, 90.71383373234002]
     return (
         <div>
-            <MapContainer center={position} zoom={15} scrollWheelZoom={false}>
+            <MapContainer center={position} zoom={15} scrollWheelZoom={true}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

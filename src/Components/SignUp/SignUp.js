@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebas.init';
+import img from '../../../src/Image/istockphoto-1281150061-612x612.jpg';
 
 
 
@@ -73,43 +74,48 @@ const SignUp = () => {
 
     }
     return (
-        <Grid>
-            <Paper elevation={20} style={paperStyle}>
-                <Grid align='center'>
-                    <h2 style={headerStyle}>Sign Up</h2>
-                    <Typography variant='caption' gutterBottom>Please fill this form to create an account !</Typography>
+        <div className='grid grid-cols-2 bg-white'>
+            <div>
+                <img className='image' src={img} alt="" />
+            </div>
+            <div className='w-full '>
+                <Grid className=''>
+                    <Paper className='sign' elevation={30} style={paperStyle}>
+                        <Grid align='center'>
+                            <h2 style={headerStyle}>Sign Up</h2>
+                            <Typography variant='caption' gutterBottom>Please fill this form to create an account !</Typography>
+                        </Grid>
+                        <form onSubmit={createNewUser}>
+                            <TextField fullWidth label='Name' placeholder="Enter your name" />
+                            <TextField onBlur={handaleEmail} fullWidth label='Email' type='emeil' placeholder="Enter your email" />
+                            <FormControl component="fieldset" style={marginTop}>
+                                <FormLabel component="legend">Gender</FormLabel>
+                                <RadioGroup aria-label="gender" name="gender" style={{ display: 'initial' }}>
+                                    <FormControlLabel value="female" control={<Radio />} label="Female" />
+                                    <FormControlLabel value="male" control={<Radio />} label="Male" />
+                                </RadioGroup>
+                            </FormControl>
+                            <TextField onBlur={handlePhone} fullWidth label='Phone Number' placeholder="Enter your phone number" />
+                            <TextField onBlur={handlePassword} fullWidth label='Password' type='password' placeholder="Enter your password" />
+                            <TextField onBlur={handleConfirm} fullWidth label='Confirm Password' type='password' placeholder="Confirm your password" />
+                            <FormControlLabel
+                                control={<Checkbox name="checkedA" />}
+                                label="I accept the terms and conditions."
+                            />
+                            {error ? error : ''}
+                            <div className="mt-2">
+                                <Button type='submit' variant='contained' color='primary'>Sign up</Button>
+                            </div>
+                            <div className="mt-1">
+                                <Button onClick={googleSignIn} type='submit' variant='contained' color='primary'>Google</Button>
+                            </div>
+                            <p>Already Have a Account ? <Link to='/login' onClick={navigateLogin}>Log In</Link> </p>
+                        </form>
+                    </Paper>
                 </Grid>
-                <form onSubmit={createNewUser}>
-                    <TextField fullWidth label='Name' placeholder="Enter your name" />
-                    <TextField onBlur={handaleEmail} fullWidth label='Email' type='emeil' placeholder="Enter your email" />
-                    <FormControl component="fieldset" style={marginTop}>
-                        <FormLabel component="legend">Gender</FormLabel>
-                        <RadioGroup aria-label="gender" name="gender" style={{ display: 'initial' }}>
-                            <FormControlLabel value="female" control={<Radio />} label="Female" />
-                            <FormControlLabel value="male" control={<Radio />} label="Male" />
-                        </RadioGroup>
-                    </FormControl>
-                    <TextField onBlur={handlePhone} fullWidth label='Phone Number' placeholder="Enter your phone number" />
-                    <TextField onBlur={handlePassword} fullWidth label='Password' type='password' placeholder="Enter your password" />
-                    <TextField onBlur={handleConfirm} fullWidth label='Confirm Password' type='password' placeholder="Confirm your password" />
-                    <FormControlLabel
-                        control={<Checkbox name="checkedA" />}
-                        label="I accept the terms and conditions."
-                    />
-                    {error ? error : ''}
-                    <div className="mt-2">
-                        <Button type='submit' variant='contained' color='primary'>Sign up</Button>
-                    </div>
-                    <div className="mt-1">
-                        <Button onClick={googleSignIn} type='submit' variant='contained' color='primary'>Google</Button>
-                    </div>
-                    <div className="mt-1">
-                        <Button onClick={googleSignIn} type='submit' variant='contained' color='primary'>Microsoft</Button>
-                    </div>
-                    <p>Already Have a Account ? <Link to='/login' onClick={navigateLogin}>Log In</Link> </p>
-                </form>
-            </Paper>
-        </Grid>
+            </div>
+        </div>
+
     )
 };
 

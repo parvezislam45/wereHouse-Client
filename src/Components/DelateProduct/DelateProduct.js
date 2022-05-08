@@ -3,22 +3,7 @@ import React from 'react';
 import useProduct from '../../Hook/Hook';
 
 const DelateProduct = () => {
-    const [products,setProducts] = useProduct();
-    // const handleDelate = id =>{
-    //     const proceed = window.confirm('Are You Sure Delate This ???')
-    //     if(proceed){
-    //         const url = `http://localhost:7000/product/${id}`
-    //         fetch(url, {
-    //             method:'DELETE'
-    //         })
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             console.log(data);
-    //             const remaining = products.filter(product => product._id !== id);
-    //             setProducts(remaining);
-    //         })
-    //     }
-    // }
+    const [products] = useProduct();
     return (
         <div>
             <h1 className='text-white text-center'>Delate</h1>

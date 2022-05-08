@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Button } from '@material-ui/core';
+import { Link, useParams } from 'react-router-dom';
 import useProduct from '../../Hook/Hook';
-import useServiceDetails from '../../Hook/useProductDetails';
 import BikeDetails from '../BikeDetails/BikeDetails';
 
 const AllBikes = () => {
     const [products, setProducts] = useProduct()
+    const { orderId} = useParams()
     const handleDelate = id =>{
         const proceed = window.confirm('Are You Sure Delate This ???')
         if(proceed){
@@ -23,7 +23,14 @@ const AllBikes = () => {
         }
     }
     return (
-        <div className=' container mx-auto grid grid-cols-3 gap-5 mt-14 gap-y-10'>
+        <>
+        <div className="text-center mt-5">
+                    <Link to={`/manageinventory/${orderId}`}>
+                        <Button type='submit' variant='contained' color='primary'>Added-Item</Button>
+                    </Link>
+                </div>
+        <div className=' container mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 mt-14 gap-y-10'>
+            
             {
                 products.map(product => <BikeDetails
                     key={product._id}
@@ -31,7 +38,10 @@ const AllBikes = () => {
                     handleDelate={handleDelate}
                 ></BikeDetails>)
             }
+            
+
         </div>
+        </>
     );
 };
 

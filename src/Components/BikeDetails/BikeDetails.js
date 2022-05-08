@@ -6,16 +6,6 @@ import useServiceDetails from '../../Hook/useProductDetails';
 
 const BikeDetails = ({ product,handleDelate }) => {
     const { _id, name, img, price, description, seller, quantity, sold } = product;
-    const { orderId} = useParams()
-    // const [products] = useServiceDetails(orderId)
-    const [products,setProducts] = useProduct();
-     
-    
-    	
-    // const navigate = useNavigate()
-    // const goToInventory = id => {
-    //     navigate(`/inventory`)
-    // }
     return (
         <div className='drop-shadow-2xl '>
             <div className='max-w-sm text-center'>
@@ -32,19 +22,15 @@ const BikeDetails = ({ product,handleDelate }) => {
                     <div className="mb-3">
 
 
-                        <button onClick={() => handleDelate(_id)} type="button" class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800">delete</button>
+                        <button onClick={() => handleDelate(_id)} type="button" class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-1.5 text-center  dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800">delete</button>
 
 
                     </div>
-                    <Link to={`/update/${_id}`}><button type="button" class="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Manage-quantity</button></Link>
+                    <Link to={`/update/${_id}`}><button type="button" class="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Manage-Quantity</button></Link>
                 </div>
-                <div className="text-center">
-                    <Link to={`/manageinventory/${orderId}`}>
-                        <Button type='submit' variant='contained' color='primary'>Manage Inventory</Button>
-                    </Link>
-                </div>
+                
             </div>
-
+            
         </div>
     );
 };
