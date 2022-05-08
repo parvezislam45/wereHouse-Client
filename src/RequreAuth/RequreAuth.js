@@ -1,6 +1,7 @@
 import { useAuthState, useSendEmailVerification } from "react-firebase-hooks/auth";
 import { Navigate, useLocation } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
+import Loading from "../Components/Loading/Loading";
 import auth from "../firebas.init";
 
 const RequireAuth = ({ children }) => {
@@ -8,7 +9,7 @@ const RequireAuth = ({ children }) => {
     const [sendEmailVerification] = useSendEmailVerification(auth);
     const location = useLocation()
     if (loading) {
-        return
+        return <Loading></Loading>
     }
 
     if (!user) {

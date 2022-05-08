@@ -61,7 +61,12 @@ const Navbar = () => {
                                         )
                                     }
 
-                                    
+                                    <div>
+                                        {user ? <h1 className='nav-btn px-3 py-2 rounded-md text-sm font-medium'>{user.displayName}</h1> 
+                                        : 'User'
+                                        }
+                                        
+                                    </div>
                                 </div>
                                 {
                                     user ? <button onClick={handleSignOut} className='md:ml-24 text-white bg-[#6D9900] border-2 border-transparent hover:border-2 hover:border-[#6D9900] hover:bg-transparent hover:text-[#6D9900] transition-all transition-duration:150ms font-medium hover:font-medium px-5 py-1 rounded-md'>Logout</button> : <button onClick={() => navigate('/login')} className='md:ml-24 text-white bg-[#6D9900] border-2 border-transparent hover:border-2 hover:border-[#6D9900] hover:bg-transparent hover:text-[#6D9900] transition-all transition-duration:150ms font-medium hover:font-medium px-5 py-1 rounded-md'>Login</button>
@@ -70,7 +75,8 @@ const Navbar = () => {
                         </div>
                         <div className="-mr-2 flex md:hidden">
                             {
-                                user ? <button onClick={handleSignOut} className='md:ml-24 text-sm md:hidden block text-white bg-[#6D9900] border-2 border-transparent hover:border-2 hover:border-[#6D9900] hover:bg-transparent hover:text-[#6D9900] transition-all transition-duration:150ms font-medium hover:font-medium px-3 py-1 rounded-md'>Logout</button> : <button onClick={() => navigate('/login')} className='md:ml-24 text-sm md:hidden block text-white bg-[#6D9900] border-2 border-transparent hover:border-2 hover:border-[#6D9900] hover:bg-transparent hover:text-[#6D9900] transition-all transition-duration:150ms font-medium hover:font-medium px-3 py-1 rounded-md'>Login</button>
+                                
+                                user ?  <button onClick={handleSignOut} className='md:ml-24 text-sm md:hidden block text-white bg-[#6D9900] border-2 border-transparent hover:border-2 hover:border-[#6D9900] hover:bg-transparent hover:text-[#6D9900] transition-all transition-duration:150ms font-medium hover:font-medium px-3 py-1 rounded-md'>Logout</button> : <button onClick={() => navigate('/login')} className='md:ml-24 text-sm md:hidden block text-white bg-[#6D9900] border-2 border-transparent hover:border-2 hover:border-[#6D9900] hover:bg-transparent hover:text-[#6D9900] transition-all transition-duration:150ms font-medium hover:font-medium px-3 py-1 rounded-md'>Login</button>
                             }
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
